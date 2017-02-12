@@ -221,15 +221,45 @@ input[type=submit] {
   .main-section {
       width: 100%; }
   .sidebar {
-      width: 600px;}
- }
+  	  max-width: none;
+      width: 100%;}
+  .work {
+  	  width: 240px;
+  }
 
 
 
   /* last screen size*/
 @media screen and (max-width: 640px) {
-  
-  #main-content,
-  #sidebar { width: 100%; }
-  #sidebar { margin-top: 40px; }
+
+   .container { 
+      width: 500px; }
+  .main-section {
+      width: 100%; }
+  .sidebar {
+  	  max-width: none;
+      width: 100%;}
+ 	nav {
+      float: none;
+      clear: both;
+      padding: 0%; }
+
+    nav a {
+    	padding-left: 10%;
+    	padding-right: 10%;
+    }
+  #masthead{
+  	width: 100%;
+  	position: static;
+  }
+  #main-container {
+	padding-top: 0;
+  }
+
+  #masthead .container{
+  	width: 100%
+  }
+  #logo{
+    width: 100%;
+  }
 }
